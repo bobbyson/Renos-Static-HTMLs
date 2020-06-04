@@ -1,0 +1,65 @@
+/* Quick Links */
+.quickmob{
+    display: inline-block;
+    .btn{
+        border: .1rem solid #e5e5e5;
+        border-radius: .1rem;
+        background-color: white;
+        text-decoration: none!important;
+        margin: .6rem 0;
+        color: #7f7f7f;
+        &::after{
+            display: none;
+        }
+    }
+    .dropdown-menu{
+        border: .1rem solid #e5e5e5;
+        margin-top: -.1rem;
+    }
+    .dropdown-item{
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        padding: .6rem 1rem;
+    }
+}
+
+/* Mobile Nav Button */
+.navbar-toggler{
+    margin: .5rem 0;
+    border-radius: .1rem;
+}
+/* Navigation Layout */
+.nav-pad-main{
+    position: relative;
+    width: 100%;
+}
+.nav-pad-quick{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    ul{
+        &.quickmain{
+            margin: 0;
+            padding: 0;
+            li{
+                display: inline-block;
+                list-style: none;
+                padding:1.3rem 0;
+                margin-left: 1.5rem;
+                a{
+                    color: $white;
+                    font-size:1.15rem;
+                    font-weight: 500;
+                    text-transform:uppercase;
+                    display: inline-block;
+                    padding: 0;
+                    &:hover{
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

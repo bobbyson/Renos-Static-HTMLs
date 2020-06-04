@@ -1,0 +1,160 @@
+.about-us {
+  @include breakpoint-down(sm) {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  &.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .about-us-banner {
+    position: relative;
+    .banner-img {
+      @include breakpoint-down(sm) {
+        width: 100%;
+      }
+    }
+    .about-us-banner-content {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      flex-direction: column;
+      img {
+        width: 27rem;
+        max-width: 27rem;
+        @include breakpoint-down(xs) {
+          width: 15rem;
+          max-width: 15rem;
+        }
+      }
+      span {
+        font-size: 3.2rem;
+        font-weight: 300;
+        line-height: 1.25;
+        letter-spacing: normal;
+        color: $white;
+        margin-top: 2rem;
+        @include breakpoint-down(xs) {
+          font-size: 2.4rem;
+          max-width: 80%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .about-us-content {
+    .content-box {
+      margin-top: 6.5rem;
+      @include breakpoint-down(sm) {
+        margin-top: 4rem;
+      }
+      .img {
+        @include breakpoint-down(sm) {
+          margin: 0 0 1.2rem 0;
+          width: 100%;
+        }
+      }
+      h1 {
+        font-size: 3.2rem;
+        font-weight: 600;
+        @include breakpoint-down(sm) {
+          font-size: 2.4rem;
+        }
+      }
+      .our-promise {
+        ul {
+          display: flex;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          flex-wrap: wrap;
+          li {
+            display: flex;
+            width: 49%;
+            flex-direction: column;
+            h3 {
+              font-size: 2rem;
+              font-weight: 500;
+              margin: 1.5rem 0 1rem;
+              @include breakpoint-down(sm) {
+                font-size: 16px;
+                font-weight: 500;
+              }
+            }
+            div {
+              font-size: 1.6rem;
+              @include breakpoint-down(sm) {
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .our-culture {
+      background: $white;
+      padding: 5rem 0;
+      // margin: 6.4rem 0;
+      h1 {
+        margin: 4rem 0;
+      }
+      ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        justify-content: flex-start;
+        flex-direction: row;
+        @include breakpoint-down(md) {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        li {
+          display: flex;
+          width: 20%;
+          padding-right: 2.5rem;
+          flex-direction: column;
+          justify-content: flex-start;
+          @include breakpoint-down(sm) {
+            width: 50%;
+            padding-right: 1rem;
+            &:nth-child(3){
+              margin-top: 2rem;
+            }
+            &:nth-child(4){
+              margin-top: 2rem;
+            }
+          }
+          h3 {
+            font-size: 2rem;
+            font-weight: 500;
+            margin: 1.5rem 0 1rem;
+            @include breakpoint-down(md) {
+              font-size: 1.6rem;
+            }
+          }
+          p {
+            font-size: 1.6rem;
+            @include breakpoint-down(sm) {
+              font-size: 1.4rem;
+            }
+          }
+          div {
+            font-size: 1.6rem;
+          }
+        }
+      }
+      h1 {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+#btn-feed{
+    position: fixed;
+    right: -3.7rem;
+    top: 45%;
+    border-radius: 0;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #227fe6;
+    border: .1rem solid #227fe6;
+    -ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Safari 3-8 */
+    transform: rotate(270deg);
+    padding: 0;
+    margin: 0;
+    width: 11rem;
+    height: 3.5rem;
+    z-index: -1;
+    display: none;
+}
+
+.feed-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    z-index: 1;
+    .popper2{
+        transform: rotate(270deg);
+        width: 9rem;
+        height: 4rem;
+        padding: 0;
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 0;
+        cursor: pointer;
+        margin-right: -2.5rem;
+    }
+    .popover .arrow{
+        display: none;
+    }
+    .bs-popover-left{
+        margin-right: 0;
+        border: 0;
+        border-radius: .1rem;
+    }
+    .popover-body{
+        background-color: #555;
+        padding: 1.5rem;
+        color: #fff;
+        font-size: 1.3rem;
+        label{
+            margin-bottom: .5rem;
+        }
+        .form-check-label{
+            font-size: 1.2rem;
+        }
+        .form-control{
+            font-size: 1.3rem;
+            width: 24.4rem;
+
+        }
+        .form-group,
+        .form-check{
+            margin-bottom: 1rem;
+        }
+        .btn{
+            margin-right: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 567px) {
+    .feed-wrap{
+        width: 3rem;
+        .popper2{
+            width: 8rem;
+            height: 3rem;
+            font-size: 1.2rem;
+            overflow: hidden;
+            margin-right: 0;
+            margin-left: -2.5rem;
+        }
+    }
+}

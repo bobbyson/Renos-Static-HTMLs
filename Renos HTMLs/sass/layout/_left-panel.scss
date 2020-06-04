@@ -1,0 +1,13 @@
+.left-panel{
+  flex: 0 0 26rem;
+  background-color: $white;
+  margin-right: .7rem;
+  border-radius: .1rem;
+  padding: 1rem;
+}
+@media only screen and (max-width: 767px) {
+  .left-panel {
+    flex: 0 0 100%;
+    margin: 0;
+  }
+}

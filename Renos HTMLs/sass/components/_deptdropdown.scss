@@ -1,0 +1,76 @@
+.DeptNavDropdown-Wrap{
+    display: none;
+    position: absolute;
+    left: 120%;
+    background: #fff;
+    top: 0px;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all .3s ;
+
+    @include box-shadow(0px, 3px, 3px, $base-color, $inset: false);
+    .DeptNavDropdown-grid{
+        display: flex;
+        padding:.8rem 0;
+        .DeptNavDropdown-gridSection{
+            .DeptNavDropdown-linkTitle{
+                font-size: 1.5rem;
+                color: $dark-grey;
+                border-bottom: 1px solid $drop-dwn-border;
+                display: block;
+                padding: .8rem 1rem .5rem 1rem;
+                font-weight: 550;
+                &:hover{
+                    text-decoration: none;
+                    color: $theme-secondary;
+                }
+                .DeptNavDropdown-linkTitle-text{
+                    &::after{
+                        content: " »";
+                    }
+                }
+            }
+            ul{            
+                list-style-type: none;
+                li{
+                    min-width: 30rem;
+                    a{
+                        font-size: 1.4rem;
+                        color: $filterlist;
+                        display: block;
+                        padding: .5rem 1rem;
+                        cursor: pointer;
+                        line-height: 2.6rem;
+                        &:hover{
+                            text-decoration: underline;
+                            color: $theme-secondary;
+                        }
+                    }
+                }
+            }
+        }
+        .DeptNavDropdown-gridItem{
+            padding: 0 1rem;
+        }
+    }
+}
+.main-nav {
+    .dropdown{     
+        &.level2{
+            &:hover{
+                    .DeptNavDropdown-Wrap{                             
+                            display: block;
+                            width: auto; 
+                            left: 100%;
+                           
+                            opacity: 1;
+                                }
+                                
+                            }
+                    }
+                    .level1-block{
+                        min-height: 63rem;
+                    }
+    }
+}

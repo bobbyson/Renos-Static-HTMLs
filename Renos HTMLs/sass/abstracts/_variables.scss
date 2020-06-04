@@ -1,0 +1,269 @@
+$theme-primary-gray: #555;
+$theme-secondary-gray: #777;
+$lightgrey:#818181;
+$btn-grey: #e8e6ed;
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+  -moz-transform: rotate($degrees);
+  -ms-transform: rotate($degrees);
+  -o-transform: rotate($degrees);
+  transform: rotate($degrees);
+}
+@mixin skewY($degrees) {
+  -webkit-transform: skewY($degrees);
+  -moz-transform: skewY($degrees);
+  -ms-transform: skewY($degrees);
+  -o-transform: skewY($degrees);
+  transform: skewY($degrees);
+}
+@mixin horizontal-gradient($from, $to, $stop: 100%) {
+  /* fallback/image non-cover color */
+  background-color: $from;
+  /* Firefox 3.6+ */
+  background-image: -moz-linear-gradient(left, $from 0%, $to $stop);
+  /* Safari 4+, Chrome 1+ */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $from), color-stop($stop, $to));
+  /* Safari 5.1+, Chrome 10+ */
+  background-image: -webkit-linear-gradient(left, $from 0%, $to $stop);
+  /* Opera 11.10+ */
+  background-image: -o-linear-gradient(left, $from 0%, $to $stop);
+  /* IE10+ */
+  background: -ms-linear-gradient(left, $from 0%, $to $stop);
+  /* Standard */
+  background: linear-gradient(to right, $from 0%, $to $stop);
+  /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to',GradientType=1 );
+}
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+  -webkit-box-shadow:inset $left $top $blur $color;
+  -moz-box-shadow:inset $left $top $blur $color;
+  box-shadow:inset $left $top $blur $color;
+  } @else {
+  -webkit-box-shadow: $left $top $blur $color;
+  -moz-box-shadow: $left $top $blur $color;
+  box-shadow: $left $top $blur $color;
+  }
+  }
+
+  //media queries
+@mixin breakpoint-down($breakpoint) {
+  @if $breakpoint == xs {
+       @media (max-width:575.98px) { @content };
+  }
+  @if $breakpoint == sm {
+       @media (max-width:767.98px) { @content };
+  }
+  @if $breakpoint == md {
+       @media (max-width: 991.98px) { @content };
+  }
+  @if $breakpoint == lg {
+    @media (max-width: 1199.98px) { @content };
+  }
+}
+
+$dark-grey:#333333;
+$green:#35900e;
+$green-new:#3ad516;
+$checkboxbrder:#aca9a9;
+$filterlist:#535353;
+$filtercross:#d1cbcb;
+$creamwhite:#f5f5f5;
+$green-border:#ccc3c3;
+$simple-border:#dedede;
+$mobile-bg:#f8f4f4;
+$drop-dwn-border:#e2e2e2;
+$tipslink:#0e1dcb;
+
+
+$white: rgba(255,255,255,1);
+$black: #000000;
+$offwhite: #f6f6f6;
+
+$grey: #303030;
+$light-gray: #999;
+$soft-gray: #cccccc;
+$light-grey2: #f3f1f4;
+$light-grey3: #ececec;
+$btn-grey: #e8e6ed;
+
+// $border: #ebebeb;
+$border: #e0dee1;
+$border-new: #e4e4e4;
+$light-red: #fdf5e8;
+
+$success: #28a745;
+$danger:#dc3545;
+
+$header-color:#0d014d;
+$light-border:#9a9a9c;
+
+$coruselcolor:#c6c6c8;
+
+$coruselarrowcolor:#555556;
+$coruselimgbg-color:#f7f7f9;
+
+$corusel-spotlitecolor1:#e0a638;
+$corusel-spotlitecolor1-txt:#262f2d;
+$corusel-spotlitecolor2:#3739b4;
+$corusel-spotlitecolor3:#ffdb01;
+$corusel-spotlitecolor3-txt:#0c232a;
+$corusel-spotlitecolor6:rgba(245,60,22,0.7);
+
+$offprice-color:#fcf9e3;
+
+
+$theme-primary: #3639b4;
+/*Lign Shade*/
+$theme-primary-light: #4d51bd;
+$theme-primary-soft: #ebebf7;
+
+$theme-secondary: #f02748;
+/*Lign Shade*/
+$theme-secondary-light: #f0465c;
+
+$theme-tertiary: #f8531e;
+/*Lign Shade*/
+$theme-tertiary-light:#feede8;
+
+$theme-quaternary: #100e37;
+
+$base-color: #101010;
+$base-color-dark: #212529;
+$corosel-blue:#ebebf7;
+$litegrey-color:#666666;
+$verfiygreen:#0fc608;
+$head-corosel:#100e37;
+
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+
+/*color*/
+$purple: #4f3fb3;
+$purple-light: #4d51bd;
+$purple-new: #535edb;
+
+$white: rgba(255,255,255,1);
+$black: #000000;
+$offwhite: #f6f6f6;
+$offwhite-new: #f3f3f3;
+
+$grey: #303030;
+$light-gray: #999;
+$soft-gray: #cccccc;
+$light-grey2: #f3f1f4;
+$light-grey3: #ececec;
+$btn-grey: #e8e6ed;
+$grey-new: #535252;
+$soft-grey-new: #f7f7f7;
+$grey-new-btn:#939393;
+
+// $border: #ebebeb;
+$border: #e0dee1;
+$light-red: #fdf5e8;
+
+$success: #28a745;
+$danger:#dc3545;
+
+$header-color:#0d014d;
+$light-border:#9a9a9c;
+
+$coruselcolor:#c6c6c8;
+
+$coruselarrowcolor:#555556;
+$coruselimgbg-color:#f7f7f9;
+
+$corusel-spotlitecolor1:#e0a638;
+$corusel-spotlitecolor1-txt:#262f2d;
+$corusel-spotlitecolor2:#3739b4;
+$corusel-spotlitecolor3:#ffdb01;
+$corusel-spotlitecolor3-txt:#0c232a;
+$corusel-spotlitecolor6:rgba(245,60,22,0.7);
+
+$offprice-color:#fcf9e3;
+$orange-color: #f87620;
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+$bg-light-red: #f7efef;
+
+
+$base-color: #101010;
+$base-color-dark: #212529;
+
+@mixin rotate($degrees) {
+    -webkit-transform: rotate($degrees);
+    -moz-transform: rotate($degrees);
+    -ms-transform: rotate($degrees);
+    -o-transform: rotate($degrees);
+    transform: rotate($degrees);
+}
+
+
+
+$black: #000000;
+$offwhite: #f6f6f6;
+
+$grey: #303030;
+$light-gray: #999;
+$soft-gray: #cccccc;
+$light-grey2: #f3f1f4;
+$light-grey3: #ececec;
+$btn-grey: #e8e6ed;
+
+// $border: #ebebeb;
+$border: #e0dee1;
+$light-red: #fdf5e8;
+
+$success: #28a745;
+$danger:#dc3545;
+
+$header-color:#0d014d;
+$light-border:#9a9a9c;
+
+$coruselcolor:#c6c6c8;
+
+$coruselarrowcolor:#555556;
+$coruselimgbg-color:#f7f7f9;
+
+$corusel-spotlitecolor1:#e0a638;
+$corusel-spotlitecolor1-txt:#262f2d;
+$corusel-spotlitecolor2:#3739b4;
+$corusel-spotlitecolor3:#ffdb01;
+$corusel-spotlitecolor3-txt:#0c232a;
+$corusel-spotlitecolor6:rgba(245,60,22,0.7);
+
+$offprice-color:#fcf9e3;
+
+
+@mixin border-radius($top-left, $top-right, $bottom-right, $bottom-left){
+  -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
+     -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;
+      -ms-border-radius: $top-left $top-right $bottom-right $bottom-left;
+          border-radius: $top-left $top-right $bottom-right $bottom-left;  
+}
+@mixin commonborder-radius(){
+  -webkit-border-radius:$radius8;
+     -moz-border-radius:$radius8;
+      -ms-border-radius:$radius8;
+          border-radius:$radius8;  
+}
+
+
+
+/*colours*/
+$snow-white: rgba(255,255,255,1);
+$haze:#ececed;
+$cloudy-sky:#9e9ea4;
+$blueberry:#2e3199;
+
+/*border*/
+$radius8:0.8rem;
+$radius0:0rem;

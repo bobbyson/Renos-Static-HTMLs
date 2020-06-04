@@ -1,0 +1,352 @@
+.footer{
+    background-color: $offwhite;
+    .foot-pad{
+        display: flex;
+        align-items:flex-start;
+        padding: 5rem 0;
+        &-new {
+          display: flex;
+          align-items:flex-start;
+          padding-top: 5rem;
+        }
+    }
+    .qr-code {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 14.5rem;
+      margin: 2rem 0 0 0;
+      .qr-code-img {
+        img {
+          width: 14.5rem;
+          height: 14.5rem;
+        }
+      }
+      h5 {
+        font-size: 1.3rem;
+        color: #939393;
+      }
+      span {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+    }
+    ul{
+        margin: 0 1.5rem;
+        padding: 0;
+        flex-grow: 1;
+        &.social-icons {
+          li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 3rem;
+          }
+        }
+        &.social {
+          li {
+            display: block;
+            float: left;
+            margin: 0 1rem 0 0 ;
+            &:first-child {
+                width: 100%;
+            }
+          }
+        }
+        li{
+            list-style: none;
+            text-transform: capitalize;
+            font-size: 1.4rem;
+            margin-bottom: .5rem;
+            .icon-call {
+              font-size: 2.3rem;
+              &:before {
+                color: $theme-quaternary;
+              }
+            }
+            p {
+              color: #939393;
+            }
+            a{
+                color: #939393;
+                text-decoration: none;
+                &:hover{
+                    opacity: 0.5;
+                }
+                &.payment-logo {
+                  display: flex;
+                  background: url("../images/payment.svg") no-repeat left;
+                  background-size: contain;
+                  height: 4rem;
+                  margin: 0;
+                  width: 90%;
+                }
+                &.logistics-logo {
+                  display: flex;
+                  background: url("../images/logistics.svg") no-repeat left;
+                  background-size: contain;
+                  height: 4rem;
+                  margin: 0;
+                  width: 90%;
+                }
+                .phone-number {
+                  font-size: 2rem;
+                  font-weight: 600;
+                  color: $theme-quaternary;
+                }
+            }
+            div {
+                display: inline;
+                width: 2rem;
+                display: inline-flex;
+                border: .1rem solid #999;
+                text-align: center;
+                padding: .2rem 0;
+                margin-right: .7rem;
+                &.social {
+                  border-radius: 50%;
+                  padding: 1rem 2rem;
+                  border: 0;
+                  background: $purple;
+                  padding: 1rem 2rem;
+                  margin: 0;
+                  display: flex;
+                  justify-content: center;
+                  color: $white;
+                  &:hover {
+                    i {
+                      color: $theme-secondary;
+                    }
+                  }
+                  i{
+                      padding: 0;
+                      margin: 0;
+                      font-size: 2rem;
+                  }
+                }
+                i{
+                    padding: 0;
+                    margin: 0 auto;
+                }
+            }
+            h3{
+                font-size: 1.6rem;
+                font-weight: 700;
+                text-transform: capitalize;
+                margin: 0 0 1rem 0;
+                color: $theme-quaternary;
+            }
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+        &:nth-child(3) {
+          flex-grow: 3;
+        }
+    }
+    .footer-top {
+      background: $theme-quaternary;
+      padding: 2rem 0;
+      .social-icons-container {
+        ul {
+          margin: 1.5rem 0 0 0;
+          padding: 0;
+          display: flex;
+          justify-content: flex-start;
+          li {
+            list-style: none;
+            margin: 0 1.5rem 0 0;
+            padding: 0;
+            a {
+              height: 3.6rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            i {
+            font-size: 3.2rem !important;
+            color: $white;
+            }
+          }
+        }
+        h4 {
+          color: $white;
+        }
+      }
+      .nocnoc-news {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        h4 {
+          color: $white;
+          padding-right: 4.4rem;
+          margin-bottom: 1.5rem;
+        }
+        .news-container {
+          display: flex;
+          max-width: 28.8rem;
+          width: 100%;
+          .icon-news {
+            padding: 1rem;
+            background: $white;
+            color: $theme-primary;
+            text-align: center;
+          }
+        }
+        .form-control {
+          border: 0;
+          padding-left: 0;
+        }
+        button {
+          background-color: $theme-tertiary !important;
+          padding-right: 1rem;
+          padding-left: 1rem;
+          &:before {
+            position: relative;
+            content: "";
+            display: inline-block;
+            width: 0.6em;
+            height: 0.6em;
+            border-right: 0.2em solid $white;
+            border-top: 0.2em solid $white;
+            transform: rotate(45deg);
+            margin-right: 0.5em;
+          }
+        }
+      }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .footer{
+        ul{
+            margin: 0;
+        }
+        .foot-pad{
+            flex-direction: row;
+            padding-top: 0;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .footer-link-three, .footer-link-four {
+          margin-top: 2rem;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .footer{
+        ul{
+            width: 100%;
+        }
+    }
+    .footer {
+      .footer-top {
+        .nocnoc-news {
+          align-items: center;
+          flex-direction: column;
+          margin-top: 2rem;
+          h4 {
+            padding-right: 0;
+            font-size: 1.4rem;
+          }
+        }
+        .social-icons-container {
+          ul {
+            justify-content: center;
+          }
+          h4 {
+            text-align: center;
+            font-size: 1.4rem;
+          }
+        }
+      }
+      .footer-link-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .footer-link-two {
+        margin-bottom: 3rem;
+        ul {
+          li {
+            &:first-child {
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+        .qr-code-img {
+          img {
+            display: none;
+          }
+          content:url("../images/line-img-footer.png");
+          width: 10rem;
+        }
+      }
+      .qr-code {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 14.5rem;
+        margin: 2rem auto 0;
+      }
+      .footer-link-three, .footer-link-four, .footer-link-five, .footer-link-six {
+        display: none;
+      }
+      .copyright {
+        display: none !important;
+      }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .footer{
+        ul{
+            width: 100%;
+        }
+    }
+}
+
+.footer{
+    .rights{
+        background-color: $theme-quaternary;
+        color: $white;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 1rem 0;
+    }
+    .copyright {
+      display: flex;
+      justify-content: space-between;
+      color: $light-gray;
+      font-size: 1.3rem;
+      padding: 3rem 0;
+      margin: 3rem 0 0;
+      border-top: 0.1rem solid $soft-gray;
+      &.copyright-container {
+        justify-content: flex-start;
+        flex-direction: column;
+        background: transparent;
+        color: $light-gray;
+        font-size: 1.4rem;
+        padding: 0 0 4rem 0;
+      }
+      .left {
+        width: 30%;
+        float: left;
+      }
+      .right {
+        width: 70%;
+        float: left;
+        text-align: right;
+      }
+    }
+}

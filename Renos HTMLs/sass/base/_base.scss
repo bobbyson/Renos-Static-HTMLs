@@ -1,0 +1,628 @@
+@import "../css/icomoon.css";
+*,
+*::after,
+*::before{}
+html{
+    font-size: 62.5%; /* 0.625 x 16 = 10 Root */
+}
+a{
+    &:link{
+        color: $theme-primary;
+    }
+    &:hover{
+        color: darken($theme-primary, 10%);
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    // font-family: 'Prompt', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: $white;
+    font-size: 1.3rem;
+    &:lang(th){
+      font-family: 'Prompt', sans-serif;
+    }
+    &.modal-open {
+        padding-right: 0!important;
+        .modal{
+            padding-right: 0!important;
+            @include breakpoint-down(sm) {
+              margin-top: 4.5rem;
+            }
+            @include breakpoint-down(xs) {
+              margin-top: 4.2rem;
+            }
+            .close{
+                font-size: 3.5rem;
+                font-weight: 300;
+
+            }
+        }
+    }
+}
+.number-font {
+  font-family: 'Lato', sans-serif !important;
+}
+.mand{
+    color: $theme-secondary;
+    margin-left: .25rem;
+}
+.pull-right {
+    float: right;
+}
+.btn{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    box-shadow: none!important;
+    outline: none!important;
+    @include commonborder-radius(); 
+    padding-bottom: 0.2rem;
+    transition: all 0.5s ease 0s;
+    &-primary {
+      background: $theme-primary;
+      color: $white !important;
+      border: 0;
+      &:hover, &:active, &:visited {
+        background: $theme-quaternary;
+        color: $white !important;
+      }
+    }
+    &-secondary {
+      background: $white;
+      color: $theme-primary !important;
+      border: 0.1rem solid $theme-primary;
+      &:hover, &:active, &:visited {
+        background: $border;
+        color: #939393 !important;
+        border: 0.1rem solid $border;
+      }
+      i {
+        font-size: 2.5rem;
+      }
+    }
+    &-outline{
+        &-primary{
+            background-color: $white !important;
+            border-color: rgba(0, 0, 0, 0.125)!important;
+            color: $base-color !important;
+            &:hover{
+                background-color: darken($theme-primary, 6%)!important;
+                border-color: $theme-primary!important;
+                color: $white !important;
+            }
+        }
+        &-secondary{
+            background-color: $white !important;
+            border-color: rgba(0, 0, 0, 0.125)!important;
+            color: $base-color !important;
+            &:hover{
+                background-color: rgba($offwhite, 80%)!important;
+                color: $grey;
+            }
+        }
+        &-white{
+          background: transparent;
+          border: 1px solid $white;
+          color: $white !important;
+        }
+    }
+    &.btn-sm {
+      padding: 0.8rem 1.5rem 0.6rem 1.5rem !important;
+      font-size: 1rem !important;
+      line-height: 1.5;
+    }
+    &.btn-lg {
+      padding: 0.8rem 1.5rem 0.8rem 1.5rem !important;
+      font-size: 1.3rem !important;
+      line-height: 1.5;
+      i {
+        font-size: 2.5rem;
+      }
+    }
+    &.btn-xl {
+      padding: 1.25rem 1.5rem 1.25rem 1.5rem !important;
+      font-size:  1.538rem !important;
+      line-height: 1.5;
+      font-weight: 600;
+      i {
+        font-size: 2.3rem;
+      }
+    }
+    &-gradient {
+      background: rgb(2,0,36);
+      background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(248,104,60,1) 0%, rgba(240,39,72,1) 100%);
+      color: $white !important;
+      &:hover, &:active{
+        background: $theme-tertiary;
+        background: linear-gradient(180deg, rgba($theme-tertiary,1) 0%, rgba($theme-tertiary,1) 0%, rgba($theme-tertiary,1) 100%);
+        color: $white !important;
+        background-color: $theme-tertiary;
+      }
+      i {
+        font-size: 2.5rem;
+      }
+    }
+    &-gradient-border {
+      background: $white;
+      border: 0.1rem solid $theme-secondary;
+      color: $theme-secondary !important;
+      &:hover{
+        background: rgb(2,0,36);
+        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(248,104,60,1) 0%, rgba(240,39,72,1) 100%);
+        color: $white !important;
+      }
+      i {
+        font-size: 2.5rem;
+      }
+    }
+    &-blue {
+      background: $theme-primary;
+      color: $white !important;
+      &:hover{
+        background: #4969f2;
+        color: $white !important;
+      }
+      i {
+        font-size: 2.5rem;
+      }
+    }
+    &-green-new {
+      background: #69c533;
+      color: $white !important;
+      &:hover{
+        background: $green;
+        color: $white !important;
+      }
+      i {
+        font-size: 2.5rem;
+      }
+    }
+    &-border {
+      background: $white;
+      color: $grey-new !important;
+      border: 0.1rem solid $border;
+      &:hover{
+        background: $soft-grey-new;
+        color: $grey-new !important;
+      }
+      i {
+        font-size: 2.5rem;
+      }
+    }
+    &-grey {
+    background-color: $creamwhite !important;
+    border-color: $soft-gray !important;
+    color: $theme-quaternary !important;
+      &:hover, &:active {
+          background-color: $soft-gray !important;
+      }
+    }
+    &-rounded{
+      border-radius: 1.5rem !important;
+      outline: none;
+      padding: .5rem 1.5rem;
+    }
+    &-green{
+      background: $green;
+      color: $white;
+      font-size: 1.2rem;
+      &:hover{
+        background:lighten($green, 5%) ;
+      }
+      &.active {
+        background: $white;
+        color: $green;
+        border: 1px solid $green;
+
+      }
+    }
+    &-green-outline{
+      background:$creamwhite ;
+      color:$green;
+      font-size: 1.2rem;
+      border: 1px solid  $green;
+      border-radius: .4rem !important;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: .3rem .6rem;
+      line-height: 2rem;
+      &:hover{
+        background:lighten($green, 5%) ;
+        color: $white;
+      }
+      &.active {
+        background: $white;
+        color: $white;
+        border: 1px solid $green;
+
+      }
+    }
+   &-white{
+      background:$white;      
+    }
+}
+.form-control{
+    border-radius: .1rem;
+    border-color: $border-new;
+    font-family: 'Lato', sans-serif !important;
+    box-shadow: none !important;
+    // border: 0 !important;
+    &::-webkit-input-placeholder { /* Chrome */
+        color: $light-gray;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+        color: $light-gray;
+        opacity: 1;
+    }
+}
+.form-check-label{
+    margin-left: .5rem;
+}
+select{
+    &.form-control:not([size]):not([multiple]){
+        height: auto;
+    }
+}
+.table-responsive{
+  overflow: auto;
+    &.cart {
+      tbody {
+        td {
+          padding: 2rem 1rem;
+        }
+      }
+    }
+}
+.btn-compare-main{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: .7rem 2rem;
+    z-index: 3;
+}
+.custom-control-label{
+    margin-left: .75rem;
+    &::after,
+    &::before{
+        width: 1.6rem;
+        height: 1.6rem;
+        top: 0;
+    }
+}
+
+/* Border */
+.border {
+  &-none {
+    border: 0 !important;
+  }
+  &-top-none {
+    border-top: 0 !important;
+  }
+  &-right-none {
+    border-right: 0 !important;
+  }
+  &-bottom-none {
+    border-bottom: 0 !important;
+  }
+  &-left-none {
+    border-left: 0 !important;
+  }
+}
+
+.line {
+  border: 0.1rem solid $border;
+}
+
+/*Checkbox*/
+.checkbox-new {
+  position: absolute;
+  opacity: 0;
+
+  & {
+    + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0 0 0 3rem;
+      &:before {
+        content: '';
+        margin-right: 1rem;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 1.7rem;
+        height: 1.7rem;
+        background: white;
+        border: 0.1rem solid $border !important;
+      }
+    }
+  }
+
+  &:hover {
+    + label {
+      &:before {
+        background: $theme-primary-light;
+      }
+    }
+  }
+
+  &:focus + label:before {
+    box-shadow: 0 0 0 0.1rem rgba(0, 0, 0, 0.12);
+  }
+
+  &:checked {
+    + label {
+      &:before {
+        background: $theme-primary-light;
+      }
+    }
+  }
+
+  &:disabled {
+    + label {
+      color: $soft-gray;
+      cursor: auto;
+      &:before {
+        box-shadow: none;
+        background: $soft-gray;
+      }
+    }
+  }
+
+  &:checked {
+    + label {
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0.4rem;
+        top: 0.8rem;
+        background: white;
+        width: 0.2rem;
+        height: 0.2rem;
+        box-shadow:
+        1px 0 0 white,
+        3px 0 0 white,
+        3px -1px 0 white,
+        3px -3px 0 white,
+        3px -5px 0 white,
+        3px -7px 0 white;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+/*Radio button*/
+.form-radio{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  background-color: $white;
+  color: $white;
+  top: 0.5rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 0;
+  outline: none;
+  border: 0.1rem solid $border;
+  &:checked {
+    &:before {
+      position: absolute;
+      font: 10px/1 'Open Sans', sans-serif;
+      top: 0.1rem;
+      left: 0.5rem;
+      content: '\02143';
+      transform: rotate(40deg);
+    }
+  }
+  &:hover {
+     background-color: $theme-primary-light;
+  }
+  &:checked{
+    background-color: $theme-primary-light;
+    border: 0.1rem solid $border;
+  }
+  label {
+    font: 300 16px/1.7 'Open Sans', sans-serif;
+    color: $base-color;
+    cursor: pointer;
+  }
+}
+
+/* Extra large screen */
+@media (min-width: 1366px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+input[type="text"]:disabled {
+  background: $offwhite;
+}
+textarea[disabled] {
+  background-color: $offwhite !important;
+}
+
+.alert-success, .alert-danger {
+  background: none;
+  &.alert-dismissible {
+    .close {
+      top : 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  i {
+    font-size: 1.3rem;
+  }
+}
+.hiddenFileInput > input{
+  height: 100%;
+  width: 100;
+  opacity: 0;
+  cursor: pointer;
+}
+.hiddenFileInput{
+  border: 1px dashed #ccc;
+  width:100%;
+  height: 80px;
+  display: inline-block;
+  overflow: hidden;
+  /*for the background, optional*/
+
+}
+
+.addnew-btn i{
+    top: 30%;
+    left: 39%;
+    font-size: 3rem;
+    color:$light-gray;
+    font-weight: 504;
+}
+
+/*Form Style*/
+label {
+  .mandatory {
+    font-size: 2rem;
+    color: $theme-tertiary;
+  }
+}
+
+
+.img-unmatchoffr{
+  background-image: url(../../images/img-unmatchoffr.png);
+  display: block;
+  width: 10rem;
+  height: 5rem;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 999;
+  img{
+    max-width: 90%;
+  }
+}
+p.unmatchedoffer{
+  font-size: 1.1rem;
+  background: $theme-secondary;
+  color: $white;
+  padding: 0 .3rem;
+  position: absolute;
+  right: 12px;
+}
+/* article navigation links*/
+.article-banner-btns{
+  .article-wrap{
+    bottom: 0;
+    right: 0;
+
+  p{
+    font-size: 1.9rem;
+    color: $white;
+    padding: 0;
+    margin: 0;
+    font-weight: 550;
+    text-align: right;
+    padding-right: 13%;
+    @include breakpoint-down(sm) {
+      font-size: 1.2rem;
+    }
+  }
+  .flexbox-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    right: 16px;
+    bottom: .5rem;
+    justify-content: flex-end;
+    @include breakpoint-down(sm) {
+      right:.5rem;
+      bottom:-.5rem;
+    }
+      li{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background:rgba($white,0.7);
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 5px;
+        -ms-flex-preferred-size: auto!important;
+        flex-basis: auto!important;
+        width: 33.33%;
+        padding: 0;
+        border: 1px solid $filtercross;
+        margin-left: 0;
+        margin-bottom: 0;
+        a{
+          font-weight: 550;
+          display: block;
+          padding: 10px;
+          &:link,&:active,&:focus,&:visited{
+            color:$dark-grey;
+          }
+          &:hover{
+            text-decoration: none;
+            color: darken($theme-primary, 15%);
+            background:rgba($white,1);
+          }
+          @include breakpoint-down(sm) {
+            padding: .5rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+        @include breakpoint-down(sm) {
+          font-size: 1.1rem;
+          max-width: 30rem;
+          min-width: 14rem;
+          white-space: nowrap;
+
+        }
+        @include breakpoint-down(sm) {
+          margin: .2rem;
+        }
+        @include breakpoint-down(xs) {
+          font-size: .9rem;
+          max-width: 20rem;
+          min-width: 11rem;
+          white-space: nowrap;
+
+        }
+      }
+      &.left-align{
+        right: auto !important;
+        left: 0px !important;
+        justify-content: flex-start !important;
+      }
+    }
+  }
+  }
+.tick-sty{
+  font-size: 7rem;
+  color: $success;
+  font-weight: lighter;
+  margin-bottom: 3rem;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  .btn {
+    width: 49%;
+    @include breakpoint-down(sm) {
+      width: 100%;
+    }
+  }
+  @include breakpoint-down(sm) {
+    flex-direction: column;
+  }
+}

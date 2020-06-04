@@ -1,0 +1,16 @@
+.right-panel {
+  flex: 4;
+  background-color: #fff;
+  margin-left: 1rem;
+  border-radius: .1rem;
+  padding: 1.5rem;
+  .profile {
+    margin: 1rem 0 0 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .right-panel {
+    flex: 0 0 100%;
+    margin: 0;
+  }
+}

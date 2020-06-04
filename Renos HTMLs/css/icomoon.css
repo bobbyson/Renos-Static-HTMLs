@@ -1,0 +1,344 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?2eufes');
+  src:  url('fonts/icomoon.eot?2eufes#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?2eufes') format('truetype'),
+    url('fonts/icomoon.woff?2eufes') format('woff'),
+    url('fonts/icomoon.svg?2eufes#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e95d";
+}
+.icon-arrow-right:before {
+  content: "\e95e";
+}
+.icon-star-half:before {
+  content: "\e95a";
+}
+.icon-star-outline:before {
+  content: "\e95b";
+}
+.icon-star-filled:before {
+  content: "\e95c";
+}
+.icon-twitter:before {
+  content: "\e956";
+  color: #939393;
+}
+.icon-youtube:before {
+  content: "\e957";
+  color: #939393;
+}
+.icon-line1:before {
+  content: "\e958";
+  color: #939393;
+}
+.icon-facebook1:before {
+  content: "\e959";
+  color: #939393;
+}
+.icon-install-service:before {
+  content: "\e955";
+}
+.icon-close:before {
+  content: "\e954";
+}
+.icon-chat:before {
+  content: "\e953";
+}
+.icon-location:before {
+  content: "\e952";
+}
+.icon-size-survey:before {
+  content: "\e951";
+}
+.icon-downarrow:before {
+  content: "\e90b";
+}
+.icon-uparrow:before {
+  content: "\e950";
+}
+.icon-premium-shipping:before {
+  content: "\e94d";
+}
+.icon-seller-fleet:before {
+  content: "\e94e";
+}
+.icon-shipping-new:before {
+  content: "\e94f";
+}
+.icon-tick:before {
+  content: "\e94c";
+}
+.icon-delete1:before {
+  content: "\e91d";
+}
+.icon-policy:before {
+  content: "\e91e";
+}
+.icon-phone-new:before {
+  content: "\e91c";
+}
+.icon-cart-new:before {
+  content: "\e949";
+}
+.icon-profile-new:before {
+  content: "\e94a";
+}
+.icon-wishlist-new:before {
+  content: "\e94b";
+}
+.icon-share:before {
+  content: "\e948";
+}
+.icon-gift:before {
+  content: "\e945";
+  color: #3639b4;
+}
+.icon-delivered:before {
+  content: "\e946";
+  color: #3639b4;
+}
+.icon-review:before {
+  content: "\e947";
+  color: #3639b4;
+}
+.icon-CardPayment:before {
+  content: "\e93e";
+}
+.icon-CounterPayment:before {
+  content: "\e93f";
+}
+.icon-Filter:before {
+  content: "\e941";
+}
+.icon-InternetBanking:before {
+  content: "\e942";
+}
+.icon-heart-border:before {
+  content: "\e943";
+}
+.icon-heart-filled:before {
+  content: "\e944";
+  color: #f02748;
+}
+.icon-section_expand:before {
+  content: "\e93c";
+}
+.icon-section_condense:before {
+  content: "\e93d";
+}
+.icon-express:before {
+  content: "\e93a";
+}
+.icon-shipping_pickup1:before {
+  content: "\e93b";
+}
+.icon-couponcode_invalid:before {
+  content: "\e92e";
+}
+.icon-couponcode_valid:before {
+  content: "\e930";
+}
+.icon-delete:before {
+  content: "\e931";
+}
+.icon-map:before {
+  content: "\e935";
+}
+.icon-payment_card:before {
+  content: "\e937";
+}
+.icon-payment_internetbanking:before {
+  content: "\e939";
+}
+.icon-shipping_pickup:before {
+  content: "\e940";
+}
+.icon-payment_counter:before {
+  content: "\e92f";
+  color: #100e37;
+}
+.icon-calendar:before {
+  content: "\e932";
+  color: #ccc;
+}
+.icon-edit:before {
+  content: "\e933";
+  color: #100e37;
+}
+.icon-installationincluded:before {
+  content: "\e934";
+}
+.icon-view:before {
+  content: "\e936";
+  color: #100e37;
+}
+.icon-shipping_delivery_ecomomic:before {
+  content: "\e938";
+}
+.icon-installation-v3:before {
+  content: "\e92d";
+  color: #3639b4;
+}
+.icon-survey:before {
+  content: "\e92c";
+  color: #3639b4;
+}
+.icon-guarantee:before {
+  content: "\e927";
+  color: #3639b4;
+}
+.icon-payless:before {
+  content: "\e928";
+  color: #3639b4;
+}
+.icon-payment:before {
+  content: "\e929";
+  color: #3639b4;
+}
+.icon-quotation:before {
+  content: "\e92a";
+  color: #3639b4;
+}
+.icon-time:before {
+  content: "\e92b";
+  color: #3639b4;
+}
+.icon-terms:before {
+  content: "\e926";
+  color: #535252;
+}
+.icon-phone:before {
+  content: "\e925";
+  color: #fff;
+}
+.icon-free-sample:before {
+  content: "\e924";
+  color: #535252;
+}
+.icon-installation-new:before {
+  content: "\e923";
+  color: #3639b4;
+}
+.icon-free-delivery:before {
+  content: "\e922";
+  color: #fff;
+}
+.icon-freesample:before {
+  content: "\e921";
+}
+.icon-installation:before {
+  content: "\e920";
+  color: #3639b4;
+}
+.icon-bestdeal:before {
+  content: "\e91f";
+}
+.icon-call:before {
+  content: "\e917";
+  color: #fff;
+}
+.icon-instagram:before {
+  content: "\e918";
+  color: #fff;
+}
+.icon-facebook:before {
+  content: "\e91a";
+  color: #fff;
+}
+.icon-line:before {
+  content: "\e91b";
+  color: #fff;
+}
+.icon-button-moredetail:before {
+  content: "\e916";
+}
+.icon-ruler:before {
+  content: "\e915";
+}
+.icon-profile:before {
+  content: "\e902";
+}
+.icon-cart:before {
+  content: "\e900";
+}
+.icon-wishlist2:before {
+  content: "\e919";
+}
+.icon-search:before {
+  content: "\e912";
+}
+.icon-cart1:before {
+  content: "\e914";
+}
+.icon-cart-add:before {
+  content: "\e901";
+}
+.icon-cart-done:before {
+  content: "\e903";
+}
+.icon-cart-filled:before {
+  content: "\e904";
+}
+.icon-contractmanagment:before {
+  content: "\e905";
+}
+.icon-deliver:before {
+  content: "\e906";
+}
+.icon-delivery:before {
+  content: "\e907";
+}
+.icon-DHL_logo .path1:before {
+  content: "\e908";
+  color: rgb(254, 204, 0);
+}
+.icon-DHL_logo .path2:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(213, 0, 41);
+}
+.icon-doneorder:before {
+  content: "\e90a";
+}
+.icon-email:before {
+  content: "\e90c";
+}
+.icon-expand-arrow:before {
+  content: "\e90d";
+}
+.icon-help:before {
+  content: "\e90e";
+}
+.icon-help-center:before {
+  content: "\e90f";
+}
+.icon-nocnoc-logo:before {
+  content: "\e910";
+}
+.icon-pending:before {
+  content: "\e911";
+}
+.icon-wishlist-active:before {
+  content: "\e913";
+}

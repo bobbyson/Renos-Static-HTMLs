@@ -1,0 +1,20 @@
+.breadcrumb{
+    margin: 0;
+    padding: 1.4rem 0;
+    background-color: transparent;
+    border-radius: 0;
+    li{
+        font-size: 1.3rem;
+        color: $theme-primary;
+        &.active{
+            color: $theme-primary;
+        }
+        a{
+            color: #555;
+            text-decoration: none;
+            &:hover{
+                color: #999;
+            }
+        }
+    }
+}

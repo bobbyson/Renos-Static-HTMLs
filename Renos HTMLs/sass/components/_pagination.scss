@@ -1,0 +1,74 @@
+.bxpagn{
+    .pagination{
+        margin: 0 1.4rem;
+        border-top: .1rem solid $border;
+        padding: 1.4rem 0;
+        border-radius: 0;
+        .page-item{
+            margin: .4rem;
+          
+            &.active{
+                .page-link{
+                    color: $white;
+                    background-color: $theme-primary;
+                }
+            }
+        }
+        .page-link{
+            border: 0;
+            color:$litegrey-color;
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            border-radius: 0;
+            padding: .5rem 1rem;
+            width: 3.2rem;
+            height: 3.2rem;
+            border: 1px solid $soft-gray;
+            border-radius: .4rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .bxpagn{
+        .pagination{
+            .page-link{
+                padding: .2rem .5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+/* right side top pagination*/
+
+.pagn-right{
+    .justify-content-center{
+        justify-content: flex-end !important;
+        border: none !important;   
+        margin-top:1rem;
+        padding:0rem; 
+        @include breakpoint-down(xs){
+            justify-content: center !important;
+        }
+        .page-item{
+            text-transform: capitalize !important;
+            border:1px solid $btn-grey;
+            a{
+                font-size:1.1rem;
+                text-transform: capitalize !important;
+                padding:.8rem .8rem .6rem!important;
+               
+              }
+            &.active .page-link {
+                color: $white;
+                background-color: $theme-primary;
+              
+            }
+            &.disabled{
+                opacity: .5;
+            }
+           
+        }   
+    }
+}
